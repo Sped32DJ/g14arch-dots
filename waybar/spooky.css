@@ -1,0 +1,227 @@
+* {
+	border: none;
+	border-radius: 15px;
+    font-family: "JetbrainsMono Nerd Font" ;
+	font-size: 18px;
+        min-height: 15px;
+        padding-left: 5px;
+        padding-right: 7px;
+}
+
+window#waybar {
+	background: transparent;
+}
+window#waybar.hidden {
+	opacity: 0.2;
+}
+#window {
+	margin-top: 6px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-radius: 12px;
+	transition: none;
+        background-color: #bb9af7;
+        color: #05390A ;
+/*        color: #60fa7b; */
+}
+#tags {
+	margin-top: 6px;
+	margin-left: 12px;
+	font-size: 4px;
+	margin-bottom: 0px;
+	border-radius: 10px;
+	background: #161320;
+	transition: none;
+}
+
+#tags button {
+	transition: none;
+	color: #FF8C00;
+	background: transparent;
+	font-size: 16px;
+	border-radius: 2px;
+}
+
+#tags button.occupied {
+	transition: none;
+	color: #F28FAD;
+	background: transparent;
+	font-size: 4px;
+}
+
+#tags button.focused {
+	color: #FF8C00;
+    border-top: 2px solid #FF8C00;
+    border-bottom: 2px solid #FF8C00;
+}
+
+#tags button:hover {
+	transition: none;
+	color: #FAE3B0;
+    border-color: #E8A2AF;
+    color: #E8A2AF;
+}
+
+#tags button.focused:hover {
+    color: #E8A2AF;
+}
+
+#workspaces button {
+        padding: 0px 0px 0px 0px;
+        margin: 4px 3px 6px 3px;
+        background-color: #161320;
+        color: #FF8C00 ;
+        min-width: 36px;
+}
+
+#workspaces button.active {
+
+        padding: 0px 0px 0px 0px;
+        margin: 4px 3px 6px 3px;
+        background-color: #bb9af7;
+        color: #000000;
+        min-width: 36px;
+}
+
+#workspaces button:hover {
+        background: rgba(0, 0, 0, 0.2);
+}
+
+#workspaces button.focused {
+        background-color: #bbccdd;
+        color: #323232;
+}
+
+#workspaces button.urgent {
+        background-color: #64727D;
+}
+
+#workspaces {
+        margin: 0px 4px;
+}
+.modules-left > widget:first-child > #workspaces {
+        margin-left: 0px;
+}
+
+.modules-right > widget:first-child > #workspaces {
+        margin-right: 0px;
+}
+
+#custom-launcher {
+	font-size: 24px;
+	margin-left: 8px;
+        padding: 0px 2px 0px 0px;
+        margin: 4px 3px 6px 3px;
+	border-radius: 10px;
+	transition: none;
+    color: #FF8C00 ;
+    background: #161320;
+}
+
+#custom-gfx {
+        font-size: 24px;
+        margin-left: 8px;
+        padding: 0px 2px 0px 0px;
+        margin: 4px 3px 6px 3px;
+        border-radius: 10px;
+        transition: none;
+    color: #161320 ;
+    background: #bb9af7 ;
+}
+
+#custom-power {
+	font-size: 20px;
+	margin-top: 6px;
+	margin-left: 8px;
+	margin-right: 8px;
+	padding-left: 10px;
+	/* padding-right: 5px; */
+        padding-right: 10px;
+	margin-bottom: 0px;
+	border-radius: 10px;
+	transition: none;
+	color: #161320;
+	background: #F28FAD;
+}
+
+#custom-wallpaper {
+	margin-top: 6px;
+	margin-left: 8px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-bottom: 0px;
+	border-radius: 10px;
+	transition: none;
+	color: #161320;
+	background: #C9CBFF;
+}
+
+#custom-updates {
+	background: #E8A2AF;
+}
+
+#custom-media {
+	background: #F2CDCD;
+}
+/* Modules */
+#pulseaudio,
+#battery,
+#network,
+#backlight,
+#clock,
+#memory,
+#temperature,
+#cpu,
+#tray {
+  padding: 2px 4px 2px;
+  margin: 5px 2px 2px 5px;
+  color: #000;
+  border-radius: 12px;
+}
+/* TODO  colors Make a gradient from orange to black */
+
+#pulseaudio {
+	background: #FF8c00;
+}
+#network {
+	background: #ff7b41;
+}
+#cpu {
+	background: #ff6f69;
+}
+#memory {
+	background: #ff6c90;
+}
+#temperature {
+	background: #ff72b3;
+}
+#backlight {
+	background: #fc7ed2;
+}
+#battery {
+	background: #de8de9;
+}
+#battery.charging, #battery.plugged {
+    background-color: #de8de9;
+}
+#battery.critical:not(.charging) {
+    background-color: #B5E8E0;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes blink {
+    to {
+        background-color: #BF616A;
+        color: #B5E8E0;
+    }
+}
+#clock {
+	background: #bb9af7;
+}
+#tray {
+	color: #B5E8E0;
+	background: #bb9af7;
+}

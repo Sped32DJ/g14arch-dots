@@ -1,9 +1,9 @@
 #!/bin/sh
 swaylock \
-	--screenshots \
-	--clock \
-  --hide-keyboard-layout \
-	--indicator \
+	# --screenshots \
+	# --clock \
+  # --hide-keyboard-layout \
+	# --indicator \
 	--indicator-radius 100 \
 	--indicator-thickness 7 \
 	--effect-blur 7x5 \

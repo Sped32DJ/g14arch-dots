@@ -110,6 +110,7 @@ window#waybar.hidden {
         margin-right: 0;
 }
 
+#custom-dynamic_pill,
 #network {
 	margin-top: 6px;
 	margin-left: 8px;

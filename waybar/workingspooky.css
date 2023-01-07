@@ -35,7 +35,7 @@ window#waybar.hidden {
 
 #tags button {
 	transition: none;
-	color: #B5E8E0;
+	color: #FF8C00;
 	background: transparent;
 	font-size: 16px;
 	border-radius: 2px;
@@ -49,9 +49,9 @@ window#waybar.hidden {
 }
 
 #tags button.focused {
-	color: #ABE9B3;
-    border-top: 2px solid #ABE9B3;
-    border-bottom: 2px solid #ABE9B3;
+	color: #FF8C00;
+    border-top: 2px solid #FF8C00;
+    border-bottom: 2px solid #FF8C00;
 }
 
 #tags button:hover {
@@ -71,7 +71,7 @@ window#waybar.hidden {
         padding: 0 0 0 0;
         margin: 4px 3px 6px 3px;
         background-color: #161320;
-        color: #B5E8E0;
+        color: #FF8C00 ;
         min-width: 36px;
 }
 
@@ -110,6 +110,7 @@ window#waybar.hidden {
         margin-right: 0;
 }
 
+#custom-dynamic_pill,
 #network {
 	margin-top: 6px;
 	margin-left: 8px;
@@ -256,7 +257,8 @@ window#waybar.hidden {
 	margin-left: 8px;
 	margin-right: 8px;
 	padding-left: 10px;
-	padding-right: 5px;
+	/* padding-right: 5px; */
+        padding-right: 10px;
 	margin-bottom: 0px;
 	border-radius: 10px;
 	transition: none;

@@ -13,6 +13,7 @@ alias transcat="queercat -f 1"
 alias lolcat="dotacat"
 alias clip="wl-paste| qrencode -t utf8"
 alias sex="yt-dlp -x -o sex.opus "https://youtu.be/KAwyWkksXuo" && mplayer sex.opus"
+alias lock="~/.config/hypr/scripts/lock.sh"
 
 alias doas="doas --"
 alias please="sudo"
@@ -20,7 +21,7 @@ alias google="ping google.com -c3"
 alias weather="curl 'wttr.in/{SanBernardino,Riverside}?format=3'" #Find a way for this to be on Waybar
 alias temp="curl 'wttr.in/?format=%t'"
 
-alias netrestart="nmcli networking on"
+alias netrestart="nmcli networking off && nmcli networking on && nmcli reload && echo BetterWork"
 alias netschool="nmcli con up UCR-SECURE"
 
 alias mirror="doas reflector -f 30 -l 30 --number 10 --verbose --save /etc/pacman.d/mirrorlist"

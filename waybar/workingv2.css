@@ -1,10 +1,14 @@
 * {
 	border: none;
-	border-radius: 10px;
+	border-radius: 15px;
     font-family: "JetbrainsMono Nerd Font" ;
-	font-size: 15px;
+	font-size: 18px;
 	min-height: 10px;
+        padding-left: 5px;
+        padding-right: 7px;
 }
+
+/* reference: padding top, right/left, bottom*/
 
 window#waybar {
 	background: transparent;
@@ -35,7 +39,7 @@ window#waybar.hidden {
 
 #tags button {
 	transition: none;
-	color: #B5E8E0;
+	color: #FF8C00;
 	background: transparent;
 	font-size: 16px;
 	border-radius: 2px;
@@ -49,9 +53,9 @@ window#waybar.hidden {
 }
 
 #tags button.focused {
-	color: #ABE9B3;
-    border-top: 2px solid #ABE9B3;
-    border-bottom: 2px solid #ABE9B3;
+	color: #FF8C00;
+    border-top: 2px solid #FF8C00;
+    border-bottom: 2px solid #FF8C00;
 }
 
 #tags button:hover {
@@ -71,7 +75,7 @@ window#waybar.hidden {
         padding: 0 0 0 0;
         margin: 4px 3px 6px 3px;
         background-color: #161320;
-        color: #B5E8E0;
+        color: #FF8C00 ;
         min-width: 36px;
 }
 
@@ -79,7 +83,7 @@ window#waybar.hidden {
 
         padding: 0 0 0 0;
         margin: 4px 3px 6px 3px;
-        background-color: #B4BEFE;
+        background-color: #bb9af7;
         color: #000000;
         min-width: 36px;
 }
@@ -110,6 +114,7 @@ window#waybar.hidden {
         margin-right: 0;
 }
 
+#custom-dynamic_pill,
 #network {
 	margin-top: 6px;
 	margin-left: 8px;
@@ -121,6 +126,28 @@ window#waybar.hidden {
 	color: #161320;
 	background: #bd93f9;
 }
+
+/* Modules */ /*
+#tray,
+#custom-media,
+#cpu,
+#memory,
+#backlight,
+#pulseaudio,
+#network,
+#bluetooth,
+#battery,
+#clock,
+#custom-sysmenu,
+#window {
+  padding: 2px 10px;
+  color: @text;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 2px;
+  margin-right: 2px;
+  border-radius: 20px;
+} */
 
 #pulseaudio {
 	margin-top: 6px;
@@ -239,15 +266,18 @@ window#waybar.hidden {
 }
 
 #custom-launcher {
-	font-size: 24px;
-	margin-top: 6px;
-	margin-left: 8px;
+	font-size: 1px;
+        padding: 0 0 0 0;
+        margin: 4px 3px 6px 3px;
+/*	margin-top: 1px;
+	margin-left: 2px;
 	padding-left: 10px;
-	padding-right: 5px;
-	border-radius: 10px;
+	padding-right: 10px; */
+	border-radius: 15px;
 	transition: none;
-    color: #89DCEB;
-    background: #161320;
+    color: #FF8C00;
+/*    background: #161320; */
+    background: #2f2f2f ;
 }
 
 #custom-power {
@@ -256,7 +286,8 @@ window#waybar.hidden {
 	margin-left: 8px;
 	margin-right: 8px;
 	padding-left: 10px;
-	padding-right: 5px;
+	/* padding-right: 5px; */
+        padding-right: 10px;
 	margin-bottom: 0px;
 	border-radius: 10px;
 	transition: none;

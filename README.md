@@ -8,7 +8,7 @@ Dotfiles for my g14 laptop running arch btw
 * Text Editor: Neovim [heavily inspired by Code Art](https://github.com/artart222/CodeArt)
 * WM: hyprland with polybar [Look at ~/Build to see who I stole from lol](https://gitlab.com/KevinThomas0/dotfiles)
 * Terminal: Kitty
-* Firefox: Using the [minimal-function-fox](https://github.com/mut-ex/minimal-functional-fox) with Dracula colors.
+* Firefox: Using the [minimal-function-fox](https://github.com/Sped32DJ/minimal-functional-fox) with Dracula colors.
 * Color Scheme: Dracula (Not fully Dracula lol)
 * File Manager: Ranger 
 * Notifications: dunst
